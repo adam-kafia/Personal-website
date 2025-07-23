@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Experience = () => {
   return (
     <section id="experience" className="w-full bg-gray-50 text-gray-900 py-16 px-6 md:px-12">
