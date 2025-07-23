@@ -59,7 +59,10 @@ const skills = {
 
 const Skills = () => {
   return (
-    <section id="skills" className="w-full bg-white py-16 px-6 md:px-12">
+    <section
+      id="skills"
+      className="w-full bg-gray-900 text-gray-300 py-10 px-6 md:px-12 border-b border-white"
+    >
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-semibold text-center mb-12">Skills</h2>
 
@@ -71,7 +74,7 @@ const Skills = () => {
                 {items.map((skill) => (
                   <span
                     key={skill}
-                    className="bg-gray-200 text-sm text-gray-800 px-3 py-1 rounded-full"
+                    className="bg-gray-900 text-sm text-gray-300 px-3 py-1 rounded-full border-gray-300 border-1"
                   >
                     {skill}
                   </span>

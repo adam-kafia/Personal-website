@@ -2,7 +2,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="w-full bg-gray-50 text-gray-900 py-16 px-6 md:px-12"
+      className="w-full bg-gray-900 text-gray-300 py-10 px-6 md:px-12 border-b"
     >
       <div className="max-w-5xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-semibold text-center mb-10">
@@ -10,12 +10,12 @@ const Experience = () => {
         </h2>
 
         <div className="grid gap-8 md:grid-cols-1">
-          <div className="bg-white p-6 rounded-lg shadow-sm border hover:shadow-md transition">
+          <div className="bg-gray-900 p-6 rounded-lg shadow-sm border hover:shadow-md transition">
             <h3 className="text-xl font-bold mb-1">
               Freelance Backend Developer
             </h3>
-            <p className="text-gray-600 italic">Upwork · Jan 2022 – Present</p>
-            <p className="mt-3 text-gray-700">
+            <p className="italic">Upwork · Jan 2022 – Present</p>
+            <p className="mt-3 text-gray-400">
               Worked with startups and SMBs to design scalable backend systems.
               Long-term contract with
               <strong> Pinely International</strong> (Mar 2022 – Jan 2025).
@@ -24,14 +24,12 @@ const Experience = () => {
             </p>
           </div>
 
-          <div className="bg-white p-6 rounded-lg shadow-sm border hover:shadow-md transition">
+          <div className="bg-gray-900 p-6 rounded-lg shadow-sm border hover:shadow-md transition">
             <h3 className="text-lg font-semibold mb-1">
               Pinely International · Backend Developer (Contract)
             </h3>
-            <p className="text-gray-600 italic">
-              Mar 2022 – Jan 2025 · Remote
-            </p>
-            <ul className="mt-4 list-disc list-inside space-y-2 text-gray-700">
+            <p className="italic">Mar 2022 – Jan 2025 · Remote</p>
+            <ul className="mt-4 list-disc list-inside space-y-2 text-gray-400">
               <li>
                 <strong>ExploreStream:</strong> Real-time NestJS backend for
                 drive-thru digital signage. Integrated legacy POS terminals via
@@ -57,12 +55,10 @@ const Experience = () => {
           </div>
 
           {/* ClimbTrack Project */}
-          <div className="bg-white p-6 rounded-lg shadow-sm border hover:shadow-md transition">
-            <h3 className="text-lg font-semibold mb-1">
-              ClimbTrack
-            </h3>
-            <p className="text-gray-600 italic">2022 – Present · Remote</p>
-            <ul className="mt-4 list-disc list-inside space-y-2 text-gray-700">
+          <div className="bg-gray-900 p-6 rounded-lg shadow-sm border hover:shadow-md transition">
+            <h3 className="text-lg font-semibold mb-1">ClimbTrack</h3>
+            <p className="italic">2022 – Present · Remote</p>
+            <ul className="mt-4 list-disc list-inside space-y-2 text-gray-400">
               <li>
                 Built to help climbers track route progress, gym visits, and
                 performance metrics.
@@ -87,14 +83,14 @@ const Experience = () => {
           </div>
 
           {/* Full-Stack Developer Profile */}
-          <div className="bg-white p-6 rounded-lg shadow-sm border hover:shadow-md transition">
+          <div className="bg-gray-900 p-6 rounded-lg shadow-sm border hover:shadow-md transition">
             <h3 className="text-lg font-semibold mb-1">
               Full-Stack Developer · React & Node Ecosystem
             </h3>
-            <p className="text-gray-600 italic">
+            <p className="italic">
               Tech Stack Summary · 2021 – Present
             </p>
-            <ul className="mt-4 list-disc list-inside space-y-2 text-gray-700">
+            <ul className="mt-4 list-disc list-inside space-y-2 text-gray-400">
               <li>
                 Frontend: React, TypeScript, Tailwind CSS, Vite, Next.js, Tauri
               </li>

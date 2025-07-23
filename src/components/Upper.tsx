@@ -1,12 +1,7 @@
 // src/components/Header.tsx
-interface UpperProps {
-  isDark: boolean;
-  toggleDark: () => void;
-}
-
-const Upper = ({ isDark, toggleDark }: UpperProps) => {
+const Upper = () => {
   return (
-    <header className="w-full bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 py-10 px-6 md:px-12 border-b">
+    <header className="w-full bg-gray-900 text-gray-300 py-10 px-6 md:px-12 border-b">
       <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
         <img
           src="/profile.png"
@@ -24,13 +19,13 @@ const Upper = ({ isDark, toggleDark }: UpperProps) => {
           simplicity.
         </p>
 
-        <button
+        {/* <button
           onClick={toggleDark}
           aria-label="Toggle dark mode"
           className="mt-6 p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition"
         >
           {isDark ? '🌞' : '🌙'}
-        </button>
+        </button> */}
       </div>
     </header>
   );
