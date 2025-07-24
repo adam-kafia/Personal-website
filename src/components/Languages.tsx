@@ -1,6 +1,6 @@
 const Languages = () => {
   return (
-    <section id="languages" className="w-full bg-gray-900 py-10 px-6 md:px-12 border-b-1 border-white">
+    <section id="languages" className="section-bg">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-semibold mb-10 text-gray-300">Languages</h2>
 

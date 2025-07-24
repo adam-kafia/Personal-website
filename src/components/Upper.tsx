@@ -1,7 +1,7 @@
 // src/components/Header.tsx
 const Upper = () => {
   return (
-    <header className="w-full bg-gray-900 text-gray-300 py-10 px-6 md:px-12 border-b">
+    <header className="section-bg">
       <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
         <img
           src="/profile.png"
