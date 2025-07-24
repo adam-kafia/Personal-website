@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 
 const box_config =
   'p-6 rounded-lg shadow-sm border-1 border-[#95BF47] hover:shadow-md transition';
@@ -11,7 +12,13 @@ const Experience = () => {
         </h2>
 
         <div className="grid gap-8 md:grid-cols-1">
-          <div className={`${box_config}`}>
+          <motion.div
+            initial={{ opacity: 0, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            className={`${box_config}`}
+          >
             <h3 className="text-xl font-bold mb-1">
               Freelance Backend Developer
             </h3>
@@ -23,9 +30,15 @@ const Experience = () => {
               Continues to accept freelance engagements through Upwork and
               private referrals, offering robust backend solutions.
             </p>
-          </div>
+          </motion.div>
 
-          <div className={`${box_config}`}>
+          <motion.div
+            initial={{ opacity: 0, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            className={`${box_config}`}
+          >
             <h3 className="text-lg font-semibold mb-1">
               Pinely International · Backend Developer (Contract)
             </h3>
@@ -53,10 +66,16 @@ const Experience = () => {
                 monitoring.
               </li>
             </ul>
-          </div>
+          </motion.div>
 
           {/* ClimbTrack Project */}
-          <div className={`${box_config}`}>
+          <motion.div
+            initial={{ opacity: 0, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            className={`${box_config}`}
+          >
             <h3 className="text-lg font-semibold mb-1">ClimbTrack</h3>
             <p className="italic">2022 – Present · Remote</p>
             <ul className="mt-4 list-disc list-inside space-y-2 text-gray-400">
@@ -81,10 +100,16 @@ const Experience = () => {
                 Grafana.
               </li>
             </ul>
-          </div>
+          </motion.div>
 
           {/* Full-Stack Developer Profile */}
-          <div className={`${box_config}`}>
+          <motion.div
+            initial={{ opacity: 0, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            className={`${box_config}`}
+          >
             <h3 className="text-lg font-semibold mb-1">
               Full-Stack Developer · React & Node Ecosystem
             </h3>
@@ -110,7 +135,7 @@ const Experience = () => {
                 testing & DX
               </li>
             </ul>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

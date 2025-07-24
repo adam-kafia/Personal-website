@@ -1,3 +1,4 @@
+import { motion } from 'motion/react';
 const skills = {
   Frontend: [
     'React',
@@ -59,25 +60,26 @@ const skills = {
 
 const Skills = () => {
   return (
-    <section
-      id="skills"
-      className="section-bg"
-    >
+    <section id="skills" className="section-bg pattern-artistic-1">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-semibold text-center mb-12 ">Skills</h2>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
-          {Object.entries(skills).map(([category, items]) => (
+          {Object.entries(skills).map(([category, items],) => (
             <div key={category}>
               <h3 className="text-lg font-semibold mb-3">{category}</h3>
               <div className="flex flex-wrap gap-2">
-                {items.map((skill) => (
-                  <span
+                {items.map((skill, j) => (
+                  <motion.span
                     key={skill}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ duration: 0.5, delay: j * 0.1 }}
                     className=" text-sm text-gray-300 px-3 py-1 rounded-full border-[#95BF47] border-1"
                   >
                     {skill}
-                  </span>
+                  </motion.span>
                 ))}
               </div>
             </div>

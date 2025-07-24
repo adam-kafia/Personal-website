@@ -1,6 +1,63 @@
 @import 'tailwindcss';
-@layer components{
-  .section-bg{
-    @apply w-full bg-[#002D2D] text-gray-300 py-10 px-6 md:px-12 border-b border-[#95BF47];
+@layer components {
+  .section-bg {
+    @apply w-full py-10 px-6 md:px-12 border-b border-[#95BF47];
   }
+  .main-bg {
+    @apply bg-[#002D2D] text-gray-300 w-full;
+  }
+  .lines {
+    @apply py-12
+         bg-[repeating-linear-gradient(45deg,rgba(255,255,255,0.1)_0,rgba(255,255,255,0.1)_1px,transparent_1px,transparent_6px)];
+  }
+}
+:root {
+  --grid-color: rgba(255, 255, 255, 0.1);
+  --grid-thick: 1px;
+  --grid-gap: 150px;
+  --hatch-color: rgba(255, 255, 255, 0.1);
+  --hatch-thick: 1px;
+  --hatch-gap: 10px;
+  --hatch-width: 80px;
+}
+
+.header-pattern {
+  position: relative;
+  background-color: rgba(0, 45, 45, 1);
+  background-image: repeating-linear-gradient(
+      90deg,
+      var(--grid-color) 0,
+      var(--grid-color) var(--grid-thick),
+      transparent var(--grid-thick),
+      transparent var(--grid-gap)
+    ),
+    repeating-linear-gradient(
+      0deg,
+      var(--grid-color) 0,
+      var(--grid-color) var(--grid-thick),
+      transparent var(--grid-thick),
+      transparent var(--grid-gap)
+    );
+  background-size: var(--grid-gap) var(--grid-gap);
+}
+.header-pattern::before,
+.header-pattern::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: var(--hatch-width);
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--hatch-color) 0,
+    var(--hatch-color) var(--hatch-thick),
+    transparent var(--hatch-thick),
+    transparent var(--hatch-gap)
+  );
+}
+.header-pattern::before {
+  left: 0;
+}
+.header-pattern::after {
+  right: 0;
 }
